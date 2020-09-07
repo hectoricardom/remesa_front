@@ -92,18 +92,21 @@ const Details = (props) => {
 
   const goback = (e) => { 
     if(typeof props.closePop === "function"){
+      setTimeout(()=>window.scrollTo(0,0),325);
       closePop();
       _Util.updFormStore(_formName,{})
       dispatch({
         type: 'UPD_KEY_VALUE',
         kv:{key:'observeForms',value:_Util.gen12CodeId()}
       })
+     
     }
 
   }
 
   const goConfirmation = (e) => { 
     setView(2)
+    window.scrollTo(0,0)
   }
   
   const _formName = 'add_remesa';
@@ -134,7 +137,7 @@ const Details = (props) => {
                   {view === 1?
                   <> 
                <div className={'titlePaymentheader  flexColor _dsplFlx spaceAround' }>
-                  {`Verifique su envio en ${_currency}`}                 
+                  {`Verifique su envio`}                 
                </div>
 
                <div className={'__Label_description__ _dsplFlx'}>
@@ -161,6 +164,9 @@ const Details = (props) => {
                       {'Depositar en: '}
                   </div>
                   <div className={'pym81b bxPyDt'}>
+                    <div className={'__pay_amount__ _dsplFlx spaceAround'} >
+                      {_currency}
+                    </div> 
                     <div className={'__title_body__  flexColor _dsplFlx spaceAround' }>
                         {_tarjeta}              
                     </div>
@@ -197,24 +203,31 @@ const Details = (props) => {
                   {view === 2?
                   <> 
                   <div className={'__title_description__ _dsplFlx  spaceAround '}>
-                    {'Perfecto su remesa esta a un paso de su familia '}
+                    {'Perfecto la remesa esta a un paso de su familia '}
                 </div>
 
 
                 <div className={'__minimun__pay__Wrapper__'}>                  
                   <div className={'pym81b bxPyDt'} >
+                    <div className={'_title_confirm  flexColor _dsplFlx spaceAround' }>
+                      {'Usted elijio pagar con'}        
+                    </div> 
                     <div className={'__minimun__pay__ _dsplFlx spaceAround'}  >
                         <img  class="icon-product lazy-img js-only" alt={_paymentMethod} src={_paymentMethodActive&&  _paymentMethodActive['url']}/>
                     </div>  
-                    <div className={'__title_description__  flexColor _dsplFlx spaceAround' }>
-                      {'hemos recibido su peticion le enviaremos los detalles del pago '}        
-                    </div>  
+                    <div className={'_dsplFlx spaceAround'}  >
+                      <div className={'_txt_confirm flexColor' }>
+                        <span className={'' }>{`le hemos enviado a `}</span>
+                        <span className={'_email_confirm' }>{_email}</span>
+                        <span className={'' }>{` los detalles para completar la operacion`}</span>        
+                      </div> 
+                    </div> 
                   </div>                 
                </div>
               
                 <div className={'_w100  _dsplFlx spaceAround'} onClick={()=>goback()} >
                   <div className={`paddField`}>
-                    <MoreInfoButton title={`Volver`}  theme={"purple"} icon={'home'}/>
+                    <MoreInfoButton title={`Volver a remesas`}  theme={"purple"} icon={'home'}/>
                   </div>
                 </div>
                 </>:null}

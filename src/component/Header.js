@@ -174,12 +174,12 @@ let _infoData = _state["infoData"]
 
   var _li_List  = _outerWidth ? <>     
             <li className="navigation-tab" onClick={()=>changePathSearch(true)}>
-              <NavLink  to={{pathname:"/browse"}} className="logo" role="slide_item">
+              <NavLink  to={{pathname:"/remesas"}} className="logo" role="slide_item">
                 <a className="menu-trigger" role="button" aria-haspopup="true" tabindex="0">{`Enviar Remesa`} </a>
               </NavLink>             
             </li>           
             <li className="navigation-tab"  onClick={()=>changePathSearch(true)}>
-              <NavLink  to={{pathname:"/movie"}} className="logo" role="slide_item">
+              <NavLink  to={{pathname:"/comprar_bitcoin"}} className="logo" role="slide_item">
                 <a className="menu-trigger" role="button" aria-haspopup="true" tabindex="0">{`Comprar BitCoin`} </a>
               </NavLink>              
             </li>        

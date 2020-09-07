@@ -3362,7 +3362,6 @@ background-color: #00bfa5;
 
 
 .paddField{
-  max-width: 220px;
   padding: 15px 7px;
 }
 
@@ -3547,9 +3546,9 @@ background-color: #00bfa5;
   font: 500 13px/17px Roboto,sans-serif;
   outline: none;
   border: 1px solid #999;
-  width: 2.6rem;
-  height: 2.6rem;
-  padding: 0.51rem;
+  width: 42px;
+  height: 42px;
+  padding: 5px;
 }
 
 
@@ -3625,7 +3624,8 @@ background-color: #00bfa5;
 .inptNumb{
   border: 2px solid #5e35b1;
   height: 2.6rem;
-  padding: 0.51rem 0;
+  height: 32px;
+  padding: 10px 0;
   background-color: #f9f9f9;
 }
 
@@ -3657,7 +3657,7 @@ background-color: #00bfa5;
 .inptNumb input[type="number"]{
   font: 600 35px/35px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
   color: #5e35b1;
-  max-width: 150px;
+  max-width: 110px;
   border: none;
 }
 
@@ -3715,6 +3715,7 @@ background-color: #00bfa5;
 
 
 @media screen and (max-width: 600px){  
+  /*
   .inptNumb input[type="number"]{
     max-width: 100px; 
     max-height: 2.6rem;
@@ -3726,6 +3727,7 @@ background-color: #00bfa5;
   .inptNumb{
     height: 2.6rem;
   }
+  */
 }
 
 
@@ -3767,9 +3769,9 @@ background-color: #00bfa5;
 
 
 .choiceBtn ._groupBtn {
-  width: 2.6rem;
-  height: 1rem;
-  padding: 1rem;
+  width: 42px;
+  height: 13px;
+  padding: 15px;
   background-color: rgb(94, 53, 177,0.14);
   border: 2px solid #5e35b1;
 }
@@ -3781,4 +3783,31 @@ background-color: #00bfa5;
 
 .choiceBtn ._groupBtn span{
   font: 600 18px/1px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+
+
+
+.mainViewInfo {
+  position: relative;
+  min-height: 200px;
+  z-index: 0;
+}
+
+._email_confirm{
+  color: rgb(94, 53, 177,1);
+  font: 600 16px/16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+
+._txt_confirm{
+  font: 400 14px/19px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  color: #4d4d4d;
+  margin-top: 25px;
+}
+
+._title_confirm{
+  font: 400 24px/26px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  color: #4d4d4d;
+  margin-bottom: 32px;
 }

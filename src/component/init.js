@@ -121,7 +121,7 @@ const Browser= (props)=>{
       _Util.updStore('route_history',props.history);
       updKV("route_history",props.history);
       if(props.location && props.location.pathname ===  "/"){
-        props.history.push({pathname:"/browse"})
+        props.history.push({pathname:"/remesas"})
         window.scrollTo(0,0)
       }
     }
@@ -176,13 +176,13 @@ let appLoaded = _state["appLoaded"];
               <>
               <Switch> 
                 <div>        
-                  <Route path="/browse" component={Browse} /> 
-                  {isAdmin?<Route path="/details" component={Details} />:null} 
+                  <Route path="/remesas" component={Browse} /> 
+                  {isAdmin?<Route path="/comprar_bitcoin" component={Details} />:null} 
                 </div>
               </Switch>
-              <div  className={`mainViewHero`} >
+              <div  className={`mainViewInfo`} >
 
-                </div>
+              </div>
               <Footer />
               </>
             </div>
