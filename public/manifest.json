@@ -1,0 +1,34 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",  
+  "version": "0.8.8",
+  "description": "Allow the browser to play HLS video urls (m3u8) 'natively'",
+  "manifest_version": 2, 
+  "background": { "scripts": [ "event.js"] },
+  "content_security_policy": "script-src 'self' 'sha256-5As4+3YpY62+l38PsxCEkjB1R4YtyktBtRScTJ3fyLU='; object-src 'self'",  
+  "permissions": [
+    "tabs",
+    "*://*/*.m3u8*",
+    "*://*/*.mp4*",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "browser_action": {
+      "default_title": "Disable",
+      "default_icon": "icon128.png",
+      "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["webpage.js"]
+  }],
+  "web_accessible_resources": [
+    "*.js",
+    "*.html"
+  ]
+}

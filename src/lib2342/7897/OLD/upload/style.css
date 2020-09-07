@@ -1,0 +1,50 @@
+
+.upload--Wrapper{
+  display: flex;
+  position: relative;
+}
+
+.upload--Container{
+  min-height: 20px;
+  margin: 0.3em 0.7em;
+}
+
+.upload--Container span{
+  position: absolute;
+  padding: 15px;
+}
+
+.upload--Container input{
+  position: absolute;
+  opacity:0;
+  height:100%;
+  width:100%;
+  
+}
+
+.file_Done{  
+  position: relative;
+  min-width: 24px;
+  height: 30px;
+  margin: 0.99em 0.7em 0;
+}
+
+.file_Done svg{
+  fill: var(--heliumPlayer__color_fire); 
+}
+
+
+
+.header_subtitle{
+  display: flex;
+}
+
+.header_subtitle .icons_btn{
+  padding: 1.199em  0 0 0.7em;
+}
+
+.header_subtitle .syncTime_seconds{ 
+  padding: 1.45em 0 0 0.7em;
+  font: 300 0.95em/1.05em Roboto,sans-serif;
+}
+

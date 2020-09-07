@@ -1,0 +1,1442 @@
+
+@media screen and (max-width: 1399px) and (min-width: 1100px){
+  .jawBoneContainer .jawBoneCommon {
+      height: 43.3vw;
+  }}
+  
+  .jawBoneContainer .jawBoneCommon {
+      display: inline-block;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 10.5vw;
+  }
+  
+  
+  
+  @media screen and (min-width: 1400px){
+    .jawBoneContainer {
+        height: 32vw;
+    }
+  }
+  
+  .jawBoneContainer {
+      background-color: #000;
+      position: relative;
+      overflow: hidden;
+      outline: none;
+      height: 37vw;
+      -webkit-transition: height 0.54s cubic-bezier(0.5, 0, 0.1, 1) 0s, opacity 0.44s cubic-bezier(0.5, 0, 0.1, 1) 0.1s;
+      -o-transition: height 0.54s cubic-bezier(0.5, 0, 0.1, 1) 0s, opacity 0.44s cubic-bezier(0.5, 0, 0.1, 1) 0.1s;
+      -moz-transition: height 0.54s cubic-bezier(0.5, 0, 0.1, 1) 0s, opacity 0.44s cubic-bezier(0.5, 0, 0.1, 1) 0.1s;
+      transition: height 0.54s cubic-bezier(0.5, 0, 0.1, 1) 0s, opacity 0.44s cubic-bezier(0.5, 0, 0.1, 1) 0.1s;
+  }
+  
+  
+  .jawBoneContainer .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    -o-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    -moz-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+  }
+  
+  
+  
+  @media screen and (min-width: 1500px){
+  .jawBoneContainer .jawBone {
+      padding-left: 60px;
+  }
+  }
+  
+  .jawBoneContainer .jawBone {
+      padding: 18px 0 12px 4%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+  }
+  
+  
+  .jawBoneContainer .jawBoneBackground {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 70%;
+  }
+  
+  
+  .jawBoneContainer h1, .jawBoneContainer h3 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+  }
+  
+  
+  @media screen and (min-width: 1400px){
+    .jawBoneContainer .title {
+        font-size: 2.4vw;
+        width: 40vw;
+    }
+  }
+  
+  
+  
+  
+  .jawBoneContainer .title {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      line-height: 1.3;
+      margin: 0 0 .2em 0;
+      font-weight: bold;
+      color: #fff;
+      font-size: 3vw;
+      width: 40vw;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 1400px){
+  .jawBoneContainer .jawBoneCommon {
+      height: 28.8vw;
+  }
+  }
+  
+  
+  .jawBoneContainer .jawBoneCommon {
+      display: inline-block;
+      margin-bottom: 20px;
+      width: 100%;
+      height: 33.3vw;
+  }
+  
+  
+  .jawBoneContainer .jawBonePanes {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    -o-transition: -o-transform 300ms;
+    -moz-transition: transform 300ms, -moz-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms;
+  }
+  
+  .jawBoneContainer .jawBonePanes .jawBonePane {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #808080;
+    opacity: 0;
+  }
+  
+  
+  .jawBoneContainer .jawBoneBackground .image-rotator-image {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    background-position: center 10%;
+  }
+  
+  .image-rotator .image-rotator-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    opacity: 0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .jawBonePane .overview {
+    margin-top: .3em;
+  }
+  
+  @media screen and (min-width: 1400px){
+    .jawBonePane .overview, .jawBonePane .content-warning {
+      min-width: 330px;
+      color: #999;
+      line-height: 1.3;
+      font-size: 1.5vw;
+    }
+  }
+  
+  
+  .jawBonePane .overview, .jawBonePane .content-warning {
+    min-width: 330px;
+    color: #999;
+    line-height: 1.3;
+    font-size: 1.5vw;
+  }
+  
+  .jawBoneContainer .jawBonePanes .jawBonePane {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #808080;
+    opacity: 0;
+  }
+  
+  
+  .jawBoneContainer .jawBoneCommon .meta {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.1vw;
+    height: 1.1vw;
+    min-height: 1.1vw;
+    line-height: 1.1vw;
+  }
+  
+  .video-meta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .jawBoneContainer .jawBoneCommon .meta > span {
+    font-weight: bold;
+  }
+  
+  .video-meta > span, .video-meta > svg {
+    margin-right: 0.5em;
+    margin-bottom: 0.3vw;
+  }
+  .match-score-wrapper {
+    color: #fff;
+  }
+  
+  
+  
+  .jawBoneContainer .jawBoneCommon .meta > span {
+    font-weight: bold;
+  }
+  
+  .maturity-rating {
+    display: inline-block;
+  }
+  
+  
+  .maturity-rating .maturity-number {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    padding: 0 0.4em;
+    unicode-bidi: normal /*!rtl:plaintext*/;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  
+  
+  
+  
+  
+  @media screen and (min-width: 1400px){
+  .jawBonePane .overview, .jawBonePane .content-warning {
+      font-size: 1.125vw;
+  }}
+  
+  .jawBonePane .overview, .jawBonePane .content-warning {
+      min-width: 330px;
+      color: #999;
+      line-height: 1.3;
+      font-size: 1.5vw;
+  }
+  
+  .watched {
+    margin-top: .8em;
+    width: 50rem;
+  }
+  .watched .progress {
+    font-size: .8em;
+    width: 88%;
+    min-height: .8em;
+  }
+  
+  .progress {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    display: block;
+    position: relative;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  
+  .watched .progress {
+    font-size: .8em;
+    width: 88%;
+    min-height: .8em;
+  }
+  
+  .progress .summary {
+    margin: 0 0 0 8px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  
+  .progress-completed {
+    position: absolute;
+    top: 0;
+    left: 0 /*rtl:ignore*/;
+    height: 2px;
+    background-color: #E50914;
+  }
+  
+
+  
+  
+  .watched {
+    margin-top: .8em;
+    width: 37vw;
+    
+  }
+  
+  .jawBonePane .overview .meta-lists {
+    margin: 20px 0 0 0;
+    width: 35vw;
+  }
+  
+  
+  
+  .jawBonePane .overview .inline-list .list-label {
+    color: #828282;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  
+  .jawBonePane .overview .inline-list {
+    font-size: .9em;
+    color: #828282;
+    margin: 2px 0 0 0;
+    font-size: .8em;
+  }
+  
+  .jawBonePane .overview .inline-list a {
+    color: #828282;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .jawBoneContainer .background .vignette {
+    background: #000;
+    z-index: 2;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .jawBoneContainer .background .vignette::before {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    background-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(left, #000, transparent);
+    background-image: -moz- oldlinear-gradient(left, #000, transparent);
+    background-image: -o-linear-gradient(left, #000, transparent);
+    background-image: linear-gradient(to right, #000, transparent);
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 275px;
+  
+  
+  }
+  
+  
+  .maturity-rating .maturity-number {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    border: solid 1px rgba(255, 255, 255, 0.4);
+    padding: 0 0.4em;
+    unicode-bidi: normal /*!rtl:plaintext*/;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .jawBoneContainer .jawBoneCommon .meta {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.1vw;
+    height: 1.1vw;
+    min-height: 1.1vw;
+    line-height: 1.1vw;
+  }
+  
+  
+  .jawBoneContainer .jawBoneCommon .meta > span {
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .jawBonePane .overview .jawbone-actions {
+    margin: .8em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  a:active, a:hover {
+    outline: 0;
+  }
+  
+  
+  
+  
+  .nf-flat-button:focus, .nf-flat-button:hover {
+    background-color: rgba(51, 51, 51, 0.4);
+    outline: none;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: -webkit-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: -webkit-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+    -o-transition: -o-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -moz-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -moz-transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -o-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .nf-flat-button {
+    font-size: 1.0vw;
+    font-weight: bold;
+    margin-right: 0.75em;
+    padding: 0.57em 1.35em;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .nf-icon-button {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+  }
+  
+  
+  .nf-flat-button-primary {
+    background-color: #E50914;
+    border-color: #FF0A16;
+  }
+  .nf-flat-button-uppercase {
+    text-transform: uppercase;
+  }
+  
+  
+  .nf-flat-button-primary:hover {
+    background-color: #FF0A16;
+  }
+  
+  
+  .jawBonePane .overview .jawbone-actions .thumbs-container {
+    margin: 0;
+    display: inline-block;
+  }
+  .thumbs-component {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  
+  
+  .thumbs-component.animated.unrated .thumb-container {
+    opacity: 1;
+    -webkit-transition: opacity 150ms linear 650ms;
+    -o-transition: opacity 150ms linear 650ms;
+    -moz-transition: opacity 150ms linear 650ms;
+    transition: opacity 150ms linear 650ms;
+  }
+  
+  .thumbs-component .thumb-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    pointer-events: auto;
+  }
+
+
+  .nf-svg-button-wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  
+  .nf-svg-button-wrapper .nf-svg-button svg {
+    color: #fff;
+    fill: #fff;
+    width: 2rem;
+    height: 2rem;
+    padding: 6px 6px 2px;
+  }
+  
+
+    
+
+  
+  .jawBoneContainer .menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 1vw;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    pointer-events: none;
+  }
+  
+  
+  
+  
+  .jawBoneContainer .menu li {
+    padding: 1em 1.5em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    color: #ccc;
+    min-width: 5%;
+    pointer-events: auto;
+  }
+  
+  
+  .jawBoneContainer .menu li.current {
+    cursor: default;
+    color: #fff;
+  }
+  
+  .jawBoneContainer .menu a {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    color: inherit;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: auto;
+  }
+  
+  @media screen and (max-width: 1399px) and (min-width: 1100px){
+    .jawBoneContainer .jawBoneCommon {
+        height: 43.3vw;
+    }
+  }
+  
+  
+  .jawBoneContainer .menu li span {
+    height: .33em;
+    display: block;
+    width: 100%;
+    margin-top: .66em;
+    -webkit-transform: translateY(0.4em);
+    -moz-transform: translateY(0.4em);
+  }
+
+
+  
+    
+    .jawBoneContainer .jawBoneCommon {
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 20.5vw;
+    }
+    
+    
+    
+    @media screen and (min-width: 1400px){
+      .jawBoneContainer {
+          height: 32vw;
+      }
+    }
+    
+
+    
+    .jawBoneContainer .background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      overflow: hidden;
+      -webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+      -o-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+      -moz-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+      transition: opacity 0.3s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+    }
+    
+    
+    
+    @media screen and (min-width: 1500px){
+    .jawBoneContainer .jawBone {
+        padding-left: 60px;
+    }
+    }
+    
+    .jawBoneContainer .jawBone {
+        padding: 18px 0 12px 4%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    
+    
+    .jawBoneContainer .jawBoneBackground {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      width: 70%;
+    }
+    
+    
+    .jawBoneContainer h1, .jawBoneContainer h3 {
+      margin: 0;
+      padding: 0;
+      font-size: inherit;
+    }
+    
+    
+    @media screen and (min-width: 1400px){
+    .jawBoneContainer .title {
+        font-size: 2.4vw;
+        width: 40vw;
+    }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 1400px){
+    .jawBoneContainer .jawBoneCommon {
+        height: 28.8vw;
+    }
+    }
+    
+    
+    .jawBoneContainer .jawBoneCommon {
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 33.3vw;
+    }
+    
+    
+    .jawBoneContainer .jawBonePanes {
+      position: relative;
+      opacity: 1;
+      z-index: 2;
+      -webkit-transition: -webkit-transform 300ms;
+      transition: -webkit-transform 300ms;
+      -o-transition: -o-transform 300ms;
+      -moz-transition: transform 300ms, -moz-transform 300ms;
+      transition: transform 300ms;
+      transition: transform 300ms, -webkit-transform 300ms, -moz-transform 300ms, -o-transform 300ms;
+    }
+    
+    .jawBoneContainer .jawBonePanes .jawBonePane {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      color: #808080;
+      opacity: 0;
+    }
+    
+    
+    .jawBoneContainer .jawBoneBackground .image-rotator-image {
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      transform: translateZ(0);
+      background-position: center 10%;
+    }
+    
+    .image-rotator .image-rotator-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      opacity: 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .jawBonePane .overview {
+      margin-top: .3em;
+    }
+    
+    @media screen and (min-width: 1400px){
+      .jawBonePane .overview, .jawBonePane .content-warning {
+        min-width: 330px;
+        color: #999;
+        line-height: 1.3;
+        font-size: 1.5vw;
+      }
+    }
+    
+    
+    .jawBonePane .overview, .jawBonePane .content-warning {
+      min-width: 330px;
+      color: #999;
+      line-height: 1.3;
+      font-size: 1.5vw;
+    }
+    
+    .jawBoneContainer .jawBonePanes .jawBonePane {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      color: #808080;
+      opacity: 0;
+    }
+    
+    
+    .jawBoneContainer .jawBoneCommon .meta {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 1.1vw;
+      height: 1.1vw;
+      min-height: 1.1vw;
+      line-height: 1.1vw;
+    }
+    
+    .video-meta {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    
+    .jawBoneContainer .jawBoneCommon .meta > span {
+      font-weight: bold;
+    }
+    
+    .video-meta > span, .video-meta > svg {
+      margin-right: 0.5em;
+      margin-bottom: 0.3vw;
+    }
+    .match-score-wrapper {
+      color: #fff;
+    }
+    
+    
+    
+    .jawBoneContainer .jawBoneCommon .meta > span {
+      font-weight: bold;
+    }
+    
+    .maturity-rating {
+      display: inline-block;
+    }
+    
+    
+    .maturity-rating .maturity-number {
+      font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      border: solid 1px rgba(255, 255, 255, 0.4);
+      padding: 0 0.4em;
+      unicode-bidi: normal /*!rtl:plaintext*/;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    
+    
+    
+    
+    
+    @media screen and (min-width: 1400px){
+    .jawBonePane .overview, .jawBonePane .content-warning {
+        font-size: 1.125vw;
+    }}
+    
+    .jawBonePane .overview, .jawBonePane .content-warning {
+        min-width: 330px;
+        color: #999;
+        line-height: 1.3;
+        font-size: 1.5vw;
+    }
+    
+    .watched {
+      margin-top: .8em;
+      width: 50rem;
+    }
+    .watched .progress {
+      font-size: .8em;
+      width: 88%;
+      min-height: .8em;
+    }
+    
+    .progress {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    
+    .progress-bar {
+      display: block;
+      position: relative;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.3);
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+    
+    .watched .progress {
+      font-size: .8em;
+      width: 88%;
+      min-height: .8em;
+    }
+    
+    .progress .summary {
+      margin: 0 0 0 8px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.3);
+    }
+    
+    
+    
+    .progress-completed {
+      position: absolute;
+      top: 0;
+      left: 0 /*rtl:ignore*/;
+      height: 2px;
+      background-color: #E50914;
+    }
+    
+    .jawBonePane .synopsis {
+      margin: .8em 0 0 0;
+      width: 32vw;
+      font-size: .8em;
+      overflow: hidden;
+      height: 5.75vw;
+    }
+    
+    
+    .watched {
+      margin-top: .8em;
+      width: 37vw;
+      
+    }
+    
+    .jawBonePane .overview .meta-lists {
+      margin: 20px 0 0 0;
+      width: 35vw;
+    }
+    
+    
+    
+    .jawBonePane .overview .inline-list .list-label {
+      color: #828282;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    
+    
+    .jawBonePane .overview .inline-list {
+      font-size: .9em;
+      color: #828282;
+      margin: 2px 0 0 0;
+      font-size: .8em;
+    }
+    
+    .jawBonePane .overview .inline-list a {
+      color: #828282;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .jawBoneContainer .background .vignette {
+      background: #000;
+      z-index: 2;
+      width: 30%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    
+    .jawBoneContainer .background .vignette::before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      background-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
+      background-image: -webkit-linear-gradient(left, #000, transparent);
+      background-image: -moz- oldlinear-gradient(left, #000, transparent);
+      background-image: -o-linear-gradient(left, #000, transparent);
+      background-image: linear-gradient(to right, #000, transparent);
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 275px;
+    
+    
+    }
+    
+    
+    .maturity-rating .maturity-number {
+      font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      border: solid 1px rgba(255, 255, 255, 0.4);
+      padding: 0 0.4em;
+      unicode-bidi: normal /*!rtl:plaintext*/;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .jawBoneContainer .jawBoneCommon .meta {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 1.1vw;
+      height: 1.1vw;
+      min-height: 1.1vw;
+      line-height: 1.1vw;
+    }
+    
+    
+    .jawBoneContainer .jawBoneCommon .meta > span {
+      font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .jawBonePane .overview .jawbone-actions {
+      margin: .8em 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    
+    a:active, a:hover {
+      outline: 0;
+    }
+    
+    
+    
+    
+    .nf-flat-button:focus, .nf-flat-button:hover {
+      background-color: rgba(51, 51, 51, 0.4);
+      outline: none;
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+      -webkit-transition: -webkit-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+      transition: -webkit-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+      -o-transition: -o-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+      -moz-transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -moz-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+      transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+      transition: transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -moz-transform 350ms cubic-bezier(0.86, 0, 0.07, 1), -o-transform 350ms cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    
+    .nf-flat-button {
+      font-size: 1.0vw;
+      font-weight: bold;
+      margin-right: 0.75em;
+      padding: 0.57em 1.35em;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      background-image: none;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .nf-icon-button {
+      display: inline-block;
+      color: #fff;
+      position: relative;
+    }
+    
+    
+    .nf-flat-button-primary {
+      background-color: #E50914;
+      border-color: #FF0A16;
+    }
+    .nf-flat-button-uppercase {
+      text-transform: uppercase;
+    }
+    
+    
+    .nf-flat-button-primary:hover {
+      background-color: #FF0A16;
+    }
+    
+    
+    .jawBonePane .overview .jawbone-actions .thumbs-container {
+      margin: 0;
+      display: inline-block;
+    }
+    .thumbs-component {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    
+    
+    .thumbs-component.animated.unrated .thumb-container {
+      opacity: 1;
+      -webkit-transition: opacity 150ms linear 650ms;
+      -o-transition: opacity 150ms linear 650ms;
+      -moz-transition: opacity 150ms linear 650ms;
+      transition: opacity 150ms linear 650ms;
+    }
+    
+    .thumbs-component .thumb-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer;
+      color: white;
+      position: relative;
+      pointer-events: auto;
+    }
+    .nf-svg-button-wrapper {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #fff;
+    }
+    
+    
+    
+    
+   
+
+
+    ._h1_title{
+      
+    }
+    
+      
+    .jawBoneContainer .title {
+      min-height: 9vw;
+    }
+  
+    
+    .jawBoneContainer .title h1{
+      padding: 2.6vw 1px;
+    }
+    
+    
+    .jawBoneContainer .menu {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      font-size: 1vw;
+      z-index: 100;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      list-style: none;
+      pointer-events: none;      
+     /*
+      background-color: rgba(0, 0, 0, 0.58);
+      background-image: -moz- oldlinear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.85) 100%);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.85) 100%);
+      background-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
+      */
+      background-image: -webkit-linear-gradient(bottom, transparent, #000);
+      background-image: -moz- oldlinear-gradient(bottom, transparent, #000);
+      background-image: -o-linear-gradient(bottom, transparent, #000);
+      background-image: linear-gradient(to bottom, transparent, #000);
+      
+  }
+    
+    
+    .jawBoneContainer .menu li {
+      padding: 1em 1.5em 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      cursor: pointer;
+      color: #ccc;
+      min-width: 5%;
+      pointer-events: auto;
+    }
+    
+    
+    .jawBoneContainer .menu li.current {
+      cursor: default;
+      color: #fff;
+    }
+    
+    .jawBoneContainer .menu a {
+      margin: 0;
+      padding: 0;
+      letter-spacing: 1px;
+      color: inherit;
+      font-weight: bold;
+      text-align: center;
+      pointer-events: auto;
+    }
+    
+    
+    
+    
+    .jawBoneContainer .menu li span {
+      height: .33em;
+      display: block;
+      width: 100%;
+      margin-top: .66em;
+      -webkit-transform: translateY(0.4em);
+      -moz-transform: translateY(0.4em);
+      -ms-transform: translateY(0.4em);
+      -o-transform: translateY(0.4em);
+      transform: translateY(0.4em);
+      -webkit-transition: -webkit-transform 200ms linear;
+      transition: -webkit-transform 200ms linear;
+      -o-transition: -o-transform 200ms linear;
+      -moz-transition: transform 200ms linear, -moz-transform 200ms linear;
+      transition: transform 200ms linear;
+      transition: transform 200ms linear, -webkit-transform 200ms linear, -moz-transform 200ms linear, -o-transform 200ms linear;
+    }
+    
+    
+    .jawBoneContainer .menu li.current span {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #E50914;
+    }
+    
+    
+    .jawBoneContainer .menu a{
+      outline: none;
+    }
+    
+
+    .jawbone-overview-info 
+    .has-jawbone-nav-transition
+    .jawBonePane .overview, 
+    .jawBonePane .content-warning,  
+    .jawBoneContainer .jawBonePanes .jawBonePane
+    {
+      outline: none;
+    }
+  
+
+
+
+  .watched .episodeTitle {
+      font-size: 1.125vw;
+  }
+
+  .watched .episodeTitle b {
+    color: white;
+    margin-right: 9px;
+  }
+
+  .watched .episodeTitle span {
+    min-width: 330px;
+    color: #999;
+    line-height: 1.3;
+    font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

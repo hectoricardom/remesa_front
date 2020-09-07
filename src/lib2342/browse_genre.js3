@@ -1,0 +1,303 @@
+
+
+
+//  5029128598  departamento de salud;
+
+import React, { useEffect, useState } from 'react'
+import { withRedux } from '../../store/redux'
+import { useSelector, useDispatch } from 'react-redux'
+
+import { withRouter} from 'react-router-dom';
+
+import {  OpenWatchDialog, getMovies, getMoviesById} from '../../actions/common'
+
+import * as _Util from '../../store/Util';
+
+import '../_styles.css'
+
+
+import RowViewPort from '../rowViewPort'
+
+
+const useObserveChanges = () => {
+  const observeChanges =  useSelector(state => state.observeChanges);
+  const dispatch = useDispatch();
+  
+
+  const _getVideos = (q,operation) => {
+    q["q"] = operation;
+    getMovies(q, dispatch, operation);
+  }
+
+
+
+  const _openMd = (dmz, item,_id) => {
+    let data = {};
+    data['zIndex']=450;
+    data['Id']=_id;
+    data['observeResize']=true;    
+    data['props']={dmz:dmz,item:item};  
+    OpenWatchDialog(dispatch,data);
+  }
+
+
+  
+  const _getVideosById= (q,operation) => {
+    getMoviesById(q, dispatch, operation);
+  }
+
+
+  return { 
+    observeChanges,
+    _getVideos,
+    _openMd,
+    _getVideosById
+  }
+}
+
+
+
+
+
+
+
+
+let dataRw = {}
+
+
+
+
+const BrowseTpeComponent = (props) => {
+  const { 
+    _getVideos,
+    _openMd,
+    _getVideosById
+  } = useObserveChanges();
+
+  let _state = _Util.getStore();
+  let keys = _Util.getGlobalsKeys()
+  _state["keys"] = keys;
+
+
+  const [initialize, setInitialize] = useState(false);
+    
+  const [genre, setGenre] = useState(null);
+
+  const [type, setType] = useState(null);
+
+  const [search, setSearch] = useState(null);
+
+
+  const [widthScreen, setWidthScreen] = useState(null);
+   
+  let searchHash = window.location.hash.split('?')[1]?window.location.hash.split('?')[1]:null;
+ 
+  const router = _Util.parseQuery(searchHash);
+
+  let outerWidth = _state["outerWidth"];
+
+  let tabs = _Util.getTabs(outerWidth);
+  
+  
+  let _IDGn = router.g?router.g:null;
+  let _QuerySearch = router.q?router.q:null;
+  const typeBrowse = window.location.hash.split('/')[1].split('?')[0];
+
+
+
+  const _getVideoInfobyId = (id) => {    
+    let Qry = {
+      params:{id:id},
+      fields:[
+        "title","synopsis","storyArt","type", "releaseYear"
+      ],
+      query:"getMoviesbyId"
+    };
+    _getVideosById(Qry, "detailVideoByID");
+  }
+
+
+
+
+  useEffect(() => {
+    
+    if(widthScreen!==outerWidth){
+      setWidthScreen(outerWidth);
+    }
+
+    if(typeBrowse){ 
+      let _kM = "";      
+      if(typeBrowse==="movie"){
+        _kM = "movieList";
+      }
+      else if(typeBrowse==="serie"){
+        _kM = "serieList";
+      }
+      else if(typeBrowse==="show"){
+        _kM = "showList";
+      }
+      else if(typeBrowse==="search"){
+        _kM = "movieList";
+      }
+      if(!type || type!==typeBrowse){
+        if(typeBrowse!=="search"){
+          _Util.updStore(_kM,{});
+          _Util.updStore(`_${typeBrowse}_${_kM}_param`,{to:50,from:0});
+          let Qry = {params:{to:50,from:0, type: typeBrowse },fields:["title","boxarts",{name:"delivery",query:"getdelivery",fields:["hasHD","quality"]}],query:"getMovies"};
+          if(router["title"]){
+            setTimeout(() => {
+              _getVideos(Qry, _kM);
+            }, 450);
+          }else{
+            _getVideos(Qry, _kM);
+          }
+          window.scrollTo(0,0);
+        }
+        setType(typeBrowse);
+        dataRw[typeBrowse] = {};    
+        dataRw[typeBrowse]["index"] = 6;
+        _Util.rmvStore(`_${typeBrowse}_row_`); 
+        window.scrollTo(0,0);
+      }
+      
+      if(genre!==_IDGn){
+        setGenre(_IDGn);
+      }
+      
+      
+      if(typeBrowse==="search" && search!==_QuerySearch){
+        _Util.updStore(_kM,{});
+        _Util.updStore(`_${typeBrowse}_${_kM}_param`,{to:72,from:0});
+        let Qry = {params:{to:72,from:0, search:_QuerySearch},fields:["title","boxarts"],query:"getMovies"};
+        if(router["title"]){
+          setTimeout(() => {
+            _getVideos(Qry, _kM);
+          }, 450);
+        }else{
+          _getVideos(Qry, _kM);
+          window.scrollTo(0,0);
+        }
+        setSearch(_QuerySearch);
+      }
+     
+
+      
+    }
+    
+
+    if(!initialize){
+      setInitialize(true);      
+      if(router["title"]){
+        let id = router.title;
+        _getVideoInfobyId(id);
+        _openMd(id)
+      }
+    }
+  });
+  
+
+
+
+  let _videosByGenre = _state["series"];
+  if(typeBrowse==="movie"){
+    _videosByGenre = _state["movieList"];
+  }
+  else if(typeBrowse==="show"){
+    _videosByGenre = _state["showList"];
+  }
+  else if(typeBrowse==="search"){
+    _videosByGenre = _state["movieList"];
+  }
+
+  
+  let  _videosByGenreTabs = _Util.groupByTabs(_videosByGenre,tabs)
+
+
+  const updLastIndex = (kk) => {
+    let _kM = "movieList"  
+    if(typeBrowse==="movie"){
+      _kM = "movieList";
+    }
+    else if(typeBrowse==="serie"){
+      _kM = "serieList";
+    }
+    else if(typeBrowse==="show"){
+      _kM = "showList";
+    }
+    else if(typeBrowse==="search"){
+      _kM = "movieList";
+    }
+    let _lr = _Util.getStore(); 
+    let prms = _lr[`_${typeBrowse}_${_kM}_param`];
+    let from =   prms["to"]+1;
+    let to =   (prms["to"]-prms["from"])+from;
+    prms["from"] = from;
+    prms["to"] = to;
+    if(search && typeBrowse==="search"){
+      prms["search"] = search;
+    }
+    prms["type"] = typeBrowse;
+    _Util.updStore(`_${typeBrowse}_${_kM}_param`,{to:to,from:from});
+    let Qry = {params:prms,fields:["title","boxarts"],query:"getMovies"};
+    _getVideos(Qry, _kM);
+  }
+
+
+
+  const typeList = {
+    "movie":525,
+    "search":" ",
+    "show":526  
+  }
+
+  let title2Show = _videosByGenreTabs && typeList[typeBrowse]? typeList[typeBrowse]:"";
+  let NUm = _videosByGenreTabs && _Util.ObjectKeys(_videosByGenreTabs).length>0;
+  return (
+    <>    
+      <div className={`mainView`} >
+        <div className={"_similarContent"}>        
+          <div className={`_dsplFlx`}>
+            {typeBrowse === "search" ? 
+              <h3 className="">{`${_Util.translatetext(530)} "${_QuerySearch}"`}</h3>  :
+              <h1 className="titleGenre">{_Util.translatetext(title2Show)}</h1>
+            }
+          </div>
+          <div className={`lolomo`}> 
+            {NUm ?  _Util.ObjectKeys(_videosByGenreTabs).map((_grTGid,_grTGid_ind)=>{
+                return(
+                  <RowViewPort  data={_videosByGenreTabs[_grTGid]} typeBrowse={typeBrowse} _key_={_grTGid_ind} _ID={_grTGid} updLastIndex={(e)=>updLastIndex(e)}/>
+                )
+            }):
+            <LoadingGenres />}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+  
+}  
+
+
+
+
+
+
+
+export default withRouter(withRedux(BrowseTpeComponent))
+
+
+
+const LoadingGenres = (props) => {
+  const outerWidth = window.outerWidth;  
+  //console.log(window.innerWidth)
+  let tabs = _Util.getTabs(outerWidth);
+  let ks = Array.from(Array(tabs*4).keys());
+  let minW  =  outerWidth / tabs;
+  return(
+      <div className={`_dsplFlx spaceAround _flxWrp`}> 
+        {ks.map((k,Ind)=>{
+          return <div  className="loadingTitle pulsate ratio-16x9 ldgMtd" style={{width: 100/tabs+"%", height: "225px", animationDelay: Ind*0.2+"s", borderRadius: "13px", margin:"5px 0px", minWidth:minW+"px"}}/>
+        })} 
+      </div>     
+  )
+}
