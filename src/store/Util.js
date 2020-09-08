@@ -35,7 +35,7 @@ let utlBase= "/";
 
  utlBase = "https://hrmfinance.com"
 
- utlBase = "http://localhost:7258"
+ // utlBase = "http://localhost:7258"
 
 
 
@@ -1410,6 +1410,7 @@ export  var validations = function(validate,data){
                         rs = {fld:fld, valid:_v,msg:'card invalid'};   
                     }    
                   }
+
                   if(vld==='required' && !_value){            
                       rs = {fld:fld, valid:false,msg:`value required ${fld}`};     
                   } 

@@ -90,6 +90,7 @@ a {
 .header_nav_container_ .navigation-tab a
 .menu-trigger{  
   font-size: 1em;
+  outline: none;
 }
 
 
@@ -3096,7 +3097,7 @@ li{
 
 
 .option__edit_payments{
-  --hxrymz_color_base_hover:#5e35b1;
+  --hxrymz_color_base_hover:var(--base-color);
   background-color: var(--hxrymz_panel_background_color);
   padding-top: 25px;
 }
@@ -3113,7 +3114,7 @@ li{
   color: var(--hxrymz_color_base_detail_label);
   font: 500 23px/29px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;  
   margin: 0 7px 12px;
-  color:#5e35b1;
+  color:var(--base-color);
 }
 
 .option__edit_payments .__title_description__{
@@ -3274,7 +3275,7 @@ background-color: #00bfa5;
 
 
 .loloHero{
-  background-color: #5e35b1;
+  background-color: var(--base-color);
   height: 25rem;
   height: 450px;
 }
@@ -3319,7 +3320,7 @@ background-color: #00bfa5;
 
 
 .formHero_gradient{
-  --vvfsfst: 94, 53, 177;
+  --vvfsfst: var(--base-color-gradient);
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(25%,rgba(var(--vvfsfst),1)),color-stop(68%,rgba(var(--vvfsfst),0.42)),color-stop(98%,transparent));
   background-image: -webkit-linear-gradient(top,rgba(var(--vvfsfst),1) 25%, rgba(var(--vvfsfst),0.42) 68%, transparent);
   background-image: -moz- oldlinear-gradient(top,rgba(var(--vvfsfst),1) 25%, rgba(var(--vvfsfst),0.42) 68%, transparent);
@@ -3368,7 +3369,7 @@ background-color: #00bfa5;
 
 .__btnAmount__ {
   border-radius: 50%;
-  border: 2.5px solid #5e35b1;
+  border: 2.5px solid var(--base-color);
   width: 2.6rem;
   height: 2.6rem;
   padding: 1rem;
@@ -3380,14 +3381,14 @@ background-color: #00bfa5;
 }
 
 .__btnAmount__ svg {
-  fill:  #5e35b1;
+  fill:  var(--base-color);
   width: 100%;
   height: 100%;
 }
 
 
 .ltr-h73cpj.color-purple-4 {
-  background-color:#5e35b1;
+  background-color:var(--base-color);
   color: white;
   -webkit-transition: background 200ms ease-in, color 200ms ease-in;
   -o-transition: background 200ms ease-in, color 200ms ease-in;
@@ -3404,13 +3405,13 @@ background-color: #00bfa5;
 }
 
 .ltr-h73cpj.color-purple-4:not(:disabled):hover {
-  --vvfsfst: 94, 53, 177;
+  --vvfsfst: var(--base-color-gradient);;
   background-color: rgba(var(--vvfsfst),0.4);
-  color: #5e35b1;
+  color: var(--base-color);
 }
 
 .ltr-h73cpj.color-purple-4:not(:disabled):hover svg{
-  fill: #5e35b1;
+  fill: var(--base-color);
 }
 
 
@@ -3424,7 +3425,7 @@ background-color: #00bfa5;
 
 .amount_label{
   font: 600 45px/55px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  color: #5e35b1;
+  color: var(--base-color);
 }
 
 
@@ -3540,8 +3541,8 @@ background-color: #00bfa5;
 
 ._groupBtn {
   padding: 3px 10px;
-  color: #5e35b1;
-  color: var(--mdc-theme-primary-color,#5e35b1);
+  color: var(--base-color);
+  color: var(--mdc-theme-primary-color,var(--base-color));
   position: relative;
   font: 500 13px/17px Roboto,sans-serif;
   outline: none;
@@ -3574,8 +3575,8 @@ background-color: #00bfa5;
 
 ._groupBtn.left.active,
 ._groupBtn.right.active {
-  background-color: rgb(94, 53, 177,0.14);
-  border: 2px solid #5e35b1;
+  background-color: rgb(var(--base-color-gradient),0.14);
+  border: 2px solid var(--base-color);
   cursor: pointer;
   --groupBtn--bg--color:  background-color 120ms ease-in;
   -webkit-transition: var(--groupBtn--bg--color);
@@ -3589,7 +3590,7 @@ background-color: #00bfa5;
 
 ._groupBtn.left.active svg,
 ._groupBtn.right.active svg{
-  fill:#5e35b1;
+  fill:var(--base-color);
   --groupBtn--svg--color:  fill 120ms ease-in;
   -webkit-transition: var(--groupBtn--svg--color);
   -o-transition: var(--groupBtn--svg--color);
@@ -3606,8 +3607,8 @@ background-color: #00bfa5;
 
 ._groupBtn.left.active:hover,
  ._groupBtn.right.active:hover {
-  background-color: rgb(94, 53, 177,1);
-  border: 2px solid #5e35b1;  
+  background-color: var(--base-color);
+  border: 2px solid var(--base-color);  
 }
 
 
@@ -3622,7 +3623,7 @@ background-color: #00bfa5;
 
 
 .inptNumb{
-  border: 2px solid #5e35b1;
+  border: 2px solid var(--base-color);
   height: 2.6rem;
   height: 32px;
   padding: 10px 0;
@@ -3631,7 +3632,7 @@ background-color: #00bfa5;
 
 .inptNumb input[type="number"]{
   font: 600 45px/55px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  color: #5e35b1;
+  color: var(--base-color);
   max-width: 150px;
   border: none;
   outline: none;
@@ -3656,7 +3657,7 @@ background-color: #00bfa5;
 
 .inptNumb input[type="number"]{
   font: 600 35px/35px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  color: #5e35b1;
+  color: var(--base-color);
   max-width: 110px;
   border: none;
 }
@@ -3674,7 +3675,7 @@ background-color: #00bfa5;
 
 .amount_label2{
   font: 600 25px/25px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-  color: #5e35b1;
+  color: var(--base-color);
   margin: 25px 0;
 }
 
@@ -3737,7 +3738,7 @@ background-color: #00bfa5;
 
 
 .titlePaymentheader{
-  color: #5e35b1;
+  color: var(--base-color);
   font: 700 34px/39px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
@@ -3772,12 +3773,12 @@ background-color: #00bfa5;
   width: 42px;
   height: 13px;
   padding: 15px;
-  background-color: rgb(94, 53, 177,0.14);
-  border: 2px solid #5e35b1;
+  background-color: rgb(var(--base-color-gradient),0.14);
+  border: 2px solid var(--base-color);
 }
 
 .choiceBtn ._groupBtn.active{
-  background-color: rgb(94, 53, 177,1);
+  background-color: var(--base-color);
   color: #fff
 }
 
@@ -3795,7 +3796,7 @@ background-color: #00bfa5;
 }
 
 ._email_confirm{
-  color: rgb(94, 53, 177,1);
+  color: var(--base-color);
   font: 600 16px/16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
@@ -3810,4 +3811,29 @@ background-color: #00bfa5;
   font: 400 24px/26px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
   color: #4d4d4d;
   margin-bottom: 32px;
+}
+
+
+
+.__title_bitC__{
+  color: var(--base-color);
+  font: 600 20px/21px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  margin-bottom: 32px;
+}
+
+._icon_confirm{
+  border-radius:50%;
+  width: 36px;
+  height: 36px;
+  padding:  14px;
+  border: 4px solid currentColor;
+}
+
+._icon_confirm svg{
+  stroke-width:3;
+}
+
+
+.boxShadow{
+  box-shadow: 0 0 15px 5px rgba(50,50,50,.18);
 }

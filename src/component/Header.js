@@ -245,12 +245,13 @@ let isArrow = fld.length>1;
     <ScrollPosition  scrollhandler={(e)=>handleScroll(e)}/>
     <div className={``}  is-mobile={`${isMobile}`}>
       <div className={`header_nav_container_  header_floating_  ${headerTransparent?'':"Wht"}`}  >
-        <div className={`_dsplFlx  _w100 `}>
-          {!isMobile && _outerWidth &&  _outerWidth>900?
+        <div className={`_dsplFlx  _w100 `}>          
           <ul  className={`_dsplFlx`} >
               {_li_List}
           </ul>
-          : <li className="navigation-tab menuSlide">
+          {/*
+          {!false && _outerWidth &&  _outerWidth>900?
+           <li className="navigation-tab menuSlide">
               <span  className="logo" role="slide_item">
                 <Icon2 
                   name={'menu'} 
@@ -259,10 +260,12 @@ let isArrow = fld.length>1;
                 />
               </span>             
           </li>
+          :null
           }
+           */}
           <div className="flexSpace"/>  
           <div className={`_right_header_content  _dsplFlx ${hover?"_hover_":""}`} >
-         
+          {/*
             <div className={`_searchContent`}>  
             {!isMobile && <>
               <div  className={`_search_icon_`}  onClick={()=>OpenSearch(true)}>
@@ -298,9 +301,10 @@ let isArrow = fld.length>1;
               {dashboard}
               
             </div>
+            */}
             </div>
           </div>
-        <div className={` hd_black_bckGrnd `} style={headerTransparent?{backgroundColor:"transparent"}:{}}></div>    
+        <div className={` hd_black_bckGrnd ${headerTransparent?"":"boxShadow"}`} style={headerTransparent?{backgroundColor:"transparent"}:{}}></div>    
       </div>      
     </div>
 

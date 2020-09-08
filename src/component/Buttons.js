@@ -36,7 +36,7 @@ export const ChoiceButton = (props) => {
 
 
 export const NumberButton = (props) => {
-    const {color, amount} = props;
+    const {color, amount, minValue} = props;
 
 
     const handleChange = (e) => {
@@ -53,9 +53,7 @@ export const NumberButton = (props) => {
     const _minus = () => {
         if(typeof props.change === "function"){
             let _v = amount - 10;
-            if(_v<30){
-                props.change(30);
-            }else{
+            if(_v>=minValue){
                 props.change(_v);
             }
         }
@@ -75,7 +73,7 @@ export const NumberButton = (props) => {
 
     let _color = color;
     let isvalid = true;
-    if(amount>2000 || amount<30){
+    if(amount>2000 || amount<minValue){
         _color = 'firebrick' 
         isvalid = false;
     }

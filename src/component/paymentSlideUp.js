@@ -94,7 +94,11 @@ const Details = (props) => {
     if(typeof props.closePop === "function"){
       setTimeout(()=>window.scrollTo(0,0),325);
       closePop();
-      _Util.updFormStore(_formName,{})
+      let initF = {
+        amount:30,
+        currency:"MLC"
+      }
+      _Util.updFormStore(_formName,initF)
       dispatch({
         type: 'UPD_KEY_VALUE',
         kv:{key:'observeForms',value:_Util.gen12CodeId()}
@@ -129,7 +133,17 @@ const Details = (props) => {
 
   return (
       <>
-        <div className={`paymentView boxCard`}>
+       <style>
+        {`
+
+        .palette{
+            --base-color: rgb(94, 53, 177,1);
+            --base-color-gradient: 94, 53, 177;
+        }
+
+        `}
+        </style>
+        <div className={`paymentView boxCard palette`}>
           <div className={`slideWrp`}>
             <div className={'option__edit_payments'}>
             <div className="__body__">  
@@ -204,13 +218,13 @@ const Details = (props) => {
                   <> 
                   <div className={'__title_description__ _dsplFlx  spaceAround '}>
                     {'Perfecto la remesa esta a un paso de su familia '}
-                </div>
+                  </div>
 
 
                 <div className={'__minimun__pay__Wrapper__'}>                  
                   <div className={'pym81b bxPyDt'} >
                     <div className={'_title_confirm  flexColor _dsplFlx spaceAround' }>
-                      {'Usted elijio pagar con'}        
+                      {'Usted eligió pagar con'}  
                     </div> 
                     <div className={'__minimun__pay__ _dsplFlx spaceAround'}  >
                         <img  class="icon-product lazy-img js-only" alt={_paymentMethod} src={_paymentMethodActive&&  _paymentMethodActive['url']}/>
@@ -225,9 +239,9 @@ const Details = (props) => {
                   </div>                 
                </div>
               
-                <div className={'_w100  _dsplFlx spaceAround'} onClick={()=>goback()} >
+                <div className={'_w100  _dsplFlx spaceAround'}  >
                   <div className={`paddField`}>
-                    <MoreInfoButton title={`Volver a remesas`}  theme={"purple"} icon={'home'}/>
+                    <MoreInfoButton title={`Volver a remesas`}  theme={"purple"} icon={'home'} clickEvent={()=>goback()}/>
                   </div>
                 </div>
                 </>:null}

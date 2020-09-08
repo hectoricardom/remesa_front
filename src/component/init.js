@@ -13,7 +13,11 @@ import { UpdateRdx, LoadData } from '../actions/common';
 import DialogHRM from './DialogHRM';
 
 import {Icon2} from './Icons';
-import Browse from './pages/browse';
+
+
+import Remesas from './pages/remesas';
+
+import BuyBitCoin from './pages/bitcoin';
 
 /*
 import BrowseGenre from './pages/browse_genre';
@@ -142,7 +146,7 @@ const Browser= (props)=>{
             ],
             query:"findbyIdCda"
           };
-          _LoadData(Qry, "userProfile");
+          //_LoadData(Qry, "userProfile");
         },350)
       })
     }
@@ -154,7 +158,6 @@ let userProfile = _state["userProfile"] ;
 
 
 
-let isAdmin =  _state["isAdmin"]
 let authenticate = true ;
 
 
@@ -164,7 +167,7 @@ let userA = _Util.getBrowser();
 let isMobile = userA.os === "Android" || userA.os === "iPhone" || _state["outerWidth"]<550 ;
 
 
-let appLoaded = _state["appLoaded"];
+let appLoaded = true || _state["appLoaded"];
   if(appLoaded){
     return (
       <> 
@@ -176,8 +179,8 @@ let appLoaded = _state["appLoaded"];
               <>
               <Switch> 
                 <div>        
-                  <Route path="/remesas" component={Browse} /> 
-                  {isAdmin?<Route path="/comprar_bitcoin" component={Details} />:null} 
+                  <Route path="/remesas" component={Remesas} /> 
+                  <Route path="/comprar_bitcoin" component={BuyBitCoin} />
                 </div>
               </Switch>
               <div  className={`mainViewInfo`} >

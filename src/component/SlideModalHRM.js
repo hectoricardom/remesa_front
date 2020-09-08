@@ -229,6 +229,11 @@ const closeOutside = (v) => {
 
 let _idK =  dg;  
 
+// https://vd294.mycdn.me/?expires=1599613618320&srcIp=96.28.143.166&srcAg=CHROME&ms=185.226.52.44&type=3&sig=WMQqiCEsPSI&ct=4&urls=45.136.21.32&clientType=0&id=140045585059&bytes=0-1055760809
+
+
+
+
 useEffect(() => {
     if(!initialize){
         let _Elmm =document.getElementById(`data_ui_${keys[93]}`);                        
@@ -249,9 +254,6 @@ useEffect(() => {
 
 
 
-
-
-console.log(dlg)
 let cmp2render = null
 if(content){
     cmp2render = React.cloneElement(content, {modalId:dg, closePop:closeTitleDetail });
